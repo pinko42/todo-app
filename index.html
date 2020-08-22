@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Oswald";
+      }
+      .nav {
+        position: sticky;
+        background-color: blue;
+        margin: 0px;
+        display: flex;
+        top: 0px;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        color: aliceblue;
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        flex-direction: column;
+      }
+      .input {
+        margin: 80px;
+      }
+      .element {
+      }
+      .button {
+        width: 80px;
+        height: 30px;
+        background-color: blue;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .text {
+        width: 500px;
+      }
+      .para {
+        background-color: gray;
+        height: 80px;
+        margin: 20px;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+      }
+      .deleteButton {
+        margin: 20px;
+        cursor: pointer;
+        
+      }
+      .txt{
+          display: flex;
+          flex: 1;
+          justify-content: flex-start;
+          margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="nav">todo list</section>
+    <section class="list">
+      <div class="input">
+        <input type="text" id="input" class="text" />
+        <button onclick="submit()" class="button">submit</button>
+      </div>
+      <div id="list" class="element"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
